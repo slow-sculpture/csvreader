@@ -1,5 +1,7 @@
 package sda.csvreader;
 
+import java.util.List;
+
 /**
  * Hello world!
  *
@@ -7,7 +9,12 @@ package sda.csvreader;
 public class App 
 {
     public static void main( String[] args ){
-        //TODO: 1.  utworzyc szkielet klast, ktoea otworzy plik
+        String path = "C:\\Users\\chris\\IdeaProjects\\sda-csvreader\\dane.csv";
+
+        //TODO: 1.  utworzyc szkielet klasy, ktoea otworzy plik
+        CsvFileReader reader = new CsvFileReader(path);
+        List<Userdata> base = reader.readFile();  //zwraca liste
+
 
         //TODO: 2. utworzyc klase/metode odpowiadajaca za przetworzenie pliku
 
