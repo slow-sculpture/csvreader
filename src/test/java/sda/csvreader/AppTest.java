@@ -1,4 +1,4 @@
-package sda-csvreader;
+package sda.csvreader;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
