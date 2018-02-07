@@ -1,14 +1,22 @@
 package sda.csvreader.reader;
 
+import sda.csvreader.CsvFileReader;
+
+/**
+ * szkielet
+ * DO ZROBIENIA POZNIEJ
+ */
+
+
 public class FileReaderFactory {
- /*   public static EmployeeReader createReader(String path) {
-        if (path.endsWith(".txt")) {
-            return new TxtEmployeeReader(path);
+    public static IFileReader createReader(String path) {
+        if (path.endsWith(".csv")) {
+            return new CsvFileReader(path);
         } else if (path.endsWith(".xml")) {
-            return new XmlEmployeeReader(path);
-        } else if (path.endsWith(".json")) {
-            return new JsonEmployeeReader(path);
+          //  return new XlsFileReader(path);
+        } else if (path.endsWith("json")) {
+         //   return new JsonEmployeeReader(path);
         }
         return null;
-    }*/
+    }
 }
