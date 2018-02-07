@@ -1,5 +1,7 @@
 package sda.csvreader;
 
+import sda.csvreader.reader.CsvFileReader;
+
 import java.util.List;
 import java.util.Map;
 
@@ -14,7 +16,11 @@ public class App
 
         //TODO: 1.  utworzyc szkielet klasy, ktoea otworzy plik
         CsvFileReader reader = new CsvFileReader(path);
-        List<Map<String, String>> base = reader.readFile();  //zwraca liste map danych
+        List<Map<String, String>> dataBase = reader.readFile();  //zwraca liste map danych
+        System.out.println(dataBase.get(0));
+        System.out.println(dataBase.get(1));
+        System.out.println(dataBase.get(2));
+        System.out.println(dataBase.get(3));
 
 
         //TODO: 2. utworzyc klase/metode odpowiadajaca za przetworzenie pliku

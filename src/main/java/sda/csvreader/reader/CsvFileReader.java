@@ -1,5 +1,6 @@
-package sda.csvreader;
+package sda.csvreader.reader;
 
+import sda.csvreader.Userdata;
 import sda.csvreader.reader.IFileReader;
 
 import java.io.BufferedReader;
@@ -23,7 +24,7 @@ public class CsvFileReader implements IFileReader{
         List<Map<String, String>> dataList = new ArrayList<>();
         Map<String, String> baseMap;
 
-
+//w pierwszej linii sa same Stringi - wypieprza sie bo przypisujemy inta
         try {
             FileReader reader = new FileReader(path);
             BufferedReader bf = new BufferedReader(reader);
@@ -32,13 +33,13 @@ public class CsvFileReader implements IFileReader{
                 String[] tokens = line.split(SEPARATOR);
                 Userdata userdata = new Userdata();
                 userdata.setName(tokens[0]);
-                userdata.setPrefix(Integer.parseInt(tokens[1]));
-                userdata.setPhoneNo(Integer.parseInt(tokens[2]));
+                userdata.setPrefix(tokens[1]);
+                userdata.setPhoneNo(tokens[2]);
 
                 baseMap = new HashMap<>();
                 baseMap.put("name", userdata.getName());
-                baseMap.put("prefix", Integer.toString(userdata.getPrefix()));
-                baseMap.put("phoneNo", Integer.toString(userdata.getPhoneNo()));
+                baseMap.put("prefix", userdata.getPrefix());
+                baseMap.put("phoneNo", userdata.getPhoneNo());
 
                 dataList.add(baseMap);
             }

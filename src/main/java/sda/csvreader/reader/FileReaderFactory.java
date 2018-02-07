@@ -1,7 +1,5 @@
 package sda.csvreader.reader;
 
-import sda.csvreader.CsvFileReader;
-
 /**
  * szkielet
  * DO ZROBIENIA POZNIEJ

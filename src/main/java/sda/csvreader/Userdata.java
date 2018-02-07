@@ -2,8 +2,8 @@ package sda.csvreader;
 
 public class Userdata {
     private String name;
-    private int prefix;
-    private int phoneNo;
+    private String prefix;
+    private String phoneNo;
 
     public String getName() {
         return name;
@@ -13,19 +13,19 @@ public class Userdata {
         this.name = name;
     }
 
-    public int getPrefix() {
+    public String getPrefix() {
         return prefix;
     }
 
-    public void setPrefix(int prefix) {
+    public void setPrefix(String prefix) {
         this.prefix = prefix;
     }
 
-    public int getPhoneNo() {
+    public String getPhoneNo() {
         return phoneNo;
     }
 
-    public void setPhoneNo(int phoneNo) {
+    public void setPhoneNo(String phoneNo) {
         this.phoneNo = phoneNo;
     }
 }
