@@ -34,7 +34,7 @@ public class CsvFileReader {
                     userdata.setPhoneNo(Integer.parseInt(tokens[2]));
                     base.add(userdata);
 
-                    baseMap.put("name", base.get(0))
+                    //baseMap.put("name", base.get(0))
             }
 
         } catch (FileNotFoundException e) {
@@ -42,6 +42,8 @@ public class CsvFileReader {
         } catch (Exception e){
             e.printStackTrace();
         }
+
+
 
         return base;
     }
