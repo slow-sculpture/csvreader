@@ -17,6 +17,8 @@ public class App
         //TODO: 1.  utworzyc szkielet klasy, ktoea otworzy plik
         CsvFileReader reader = new CsvFileReader(path);
         List<Map<String, String>> dataBase = reader.readFile();  //zwraca liste map danych
+
+        //test
         System.out.println(dataBase.get(0));
         System.out.println(dataBase.get(1));
         System.out.println(dataBase.get(2));
@@ -24,6 +26,7 @@ public class App
 
 
         //TODO: 2. utworzyc klase/metode odpowiadajaca za przetworzenie pliku
+
 
         //TODO: 3. utworzyc metode, ktora wyciagnie z pierwszego wiersza pliku naglowki
 
